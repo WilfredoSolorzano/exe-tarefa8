@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/contato.png" alt="contato ">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contato">
+            <input type="text" id="nome-Contato" required placeholder="Nome de contato" />
+            <input type="number" id="numero-telefonico" required placeholder="Número telefonico" maxlenth="11"/>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <th>
+                    Nome do contato
+                </th>
+                <th>Número do telefone</th>
+                <th class="agre">agregado</th>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Números agregados</td>
+                    <td id="nagregados"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="tabela">
+        <div class="Apagar">
+            <h3>Apagar Agenda</h3>
+            <button class="reset" onClick="window.location.reload()">Apagar</button>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+    </html>
